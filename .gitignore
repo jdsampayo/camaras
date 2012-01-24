@@ -22,5 +22,6 @@ pickle-email-*.html
 auto-save-list
 tramp
 .\#*
-
+.DS_Store
+.*
 
