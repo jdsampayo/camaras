@@ -7,16 +7,15 @@
     <link rel="stylesheet"  href="jquery.mobile-1.0.min.css" />
     <script src="jquery-1.6.4.min.js"></script>
     <script src="jquery.mobile-1.0.min.js"></script>
-    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
-    <script src="http://vjs.zencdn.net/c/video.js"></script>
   </head> 
   <body> 
     <div data-role="page">
       <div data-role="content">
-        <video autoplay="autoplay" class="video-js vjs-default-skin" controls preload="auto" data-setup="{}" >
+        <video autoplay="autoplay" controls="controls" >
           <source src="video.mp4" type="video/mp4" />
           <source src="video.webm" type="video/webm" />
-          Video no se ve? <a href="video.mp4">Bajar</a>
+<object width="350" height="240"> <param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf"></param><param name="flashvars" value="src=http%3A%2F%2Fcamaras.amenoske.com%2Fvideo.mp4"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="350" height="240" flashvars="src=http%3A%2F%2Fcamaras.amenoske.com%2Fvideo.mp4"></embed></object>
+
         </video>
       </div>
       <div data-role="footer" class="footer-docs" data-theme="c">
