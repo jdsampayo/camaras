@@ -7,13 +7,14 @@
     <link rel="stylesheet"  href="jquery.mobile-1.0.min.css" />
     <script src="jquery-1.6.4.min.js"></script>
     <script src="jquery.mobile-1.0.min.js"></script>
-    
+    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
   </head> 
   <body> 
     <div data-role="page">
       <div data-role="content">
-        <video controls="controls" autoplay="autoplay" >
-          <source src="video.mp4" />
+        <video autoplay="autoplay" class="video-js vjs-default-skin" controls preload="auto" data-setup="{}" >
+          <source src="video.mp4" type="video/mp4" />
           <source src="video.webm" type="video/webm" />
           Video no se ve? <a href="video.mp4">Bajar</a>
         </video>
