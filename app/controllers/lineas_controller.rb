@@ -14,7 +14,7 @@ class LineasController < ApplicationController
   # GET /lineas/1.json
   def show
     @linea = Linea.find(params[:id])
-
+    @estaciones = @linea.estaciones
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @linea }

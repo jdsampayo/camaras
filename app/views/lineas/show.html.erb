@@ -1,15 +1,16 @@
-<p id="notice"><%= notice %></p>
+<div data-role="header">
+  <h1><%= @linea.nombre %></h1>
+  <a data-rel="back" data-theme="b">Back</a>
+</div>
+<div data-role="content">
+    <ul data-role="listview" data-theme="c">
 
-<p>
-  <b>Nombre:</b>
-  <%= @linea.nombre %>
-</p>
+<% @estaciones.each do |estacion| %>
+  <li>
+    <%= link_to estacion.nombre, estacion_path(estacion) %>
+  </li>
 
-<p>
-  <b>Color:</b>
-  <%= @linea.color %>
-</p>
+<% end %>
+  </ul>
+</div>
 
-
-<%= link_to 'Edit', edit_linea_path(@linea) %> |
-<%= link_to 'Back', lineas_path %>
