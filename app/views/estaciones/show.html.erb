@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @estacion.nombre %>
+</p>
+
+<p>
+  <b>Linea:</b>
+  <%= @estacion.linea_id %>
+</p>
+
+<p>
+  <b>Imagen:</b>
+  <%= @estacion.imagen %>
+</p>
+
+
+<%= link_to 'Edit', edit_estacion_path(@estacion) %> |
+<%= link_to 'Back', estaciones_path %>

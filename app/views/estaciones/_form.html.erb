@@ -1,0 +1,29 @@
+<%= form_for(@estacion) do |f| %>
+  <% if @estacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@estacion.errors.count, "error") %> prohibited this estacion from being saved:</h2>
+
+      <ul>
+      <% @estacion.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :linea_id %><br />
+    <%= f.number_field :linea_id %>
+  </div>
+  <div class="field">
+    <%= f.label :imagen %><br />
+    <%= f.text_field :imagen %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

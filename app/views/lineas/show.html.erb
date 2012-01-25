@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @linea.nombre %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @linea.color %>
+</p>
+
+
+<%= link_to 'Edit', edit_linea_path(@linea) %> |
+<%= link_to 'Back', lineas_path %>
