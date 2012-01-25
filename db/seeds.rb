@@ -80,7 +80,7 @@ estaciones_lineaB.each do |estacion|
   Estacion.create :nombre => estacion, :linea_id => 11
 end
 
-
+Camara.create :descripcion => "Pasillo 1"
 
 
 
