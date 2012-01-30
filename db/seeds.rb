@@ -36,8 +36,8 @@ estaciones_lineaA = ["Pantitlán","Agrícola Oriental","Canal de San Juan","Tepa
 
 estaciones_lineaB = ['Ciudad Azteca','Plaza Aragón','Olímpica','Ecatepec','Muzquiz','Río de los Remedios','Impulsora','Nezahualcóyotl','Villa de Aragón','Bosque de Aragón','Deportivo Oceanía','Oceanía','Romero Rubio','R. Flores Magón','San Lázaro','Morelos','Tepito','Lagunilla','Garibaldi','Guerrero','Buenavista']
 
-estaciones_linea1.each do |estacion|
-  Estacion.create :nombre => estacion, :linea_id => 1
+estaciones_linea1.each_with_index do |estacion,index|
+  Estacion.create :nombre => estacion, :linea_id => 1,:imagen => "Estaciones/1/#{index}.jpg"
 end
 
 estaciones_linea2.reverse.each do |estacion|
