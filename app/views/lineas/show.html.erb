@@ -1,6 +1,9 @@
 <div data-role="page">
   <div data-role="header" class="linea-<%= @linea.nombre %>">
-    <h1>Línea <%= @linea.nombre %></h1>
+<% if @linea.nombre == "B" %>
+<span class="linea-B-2"></span>
+<% end %>    
+<h1>Línea <%= @linea.nombre %></h1>
   </div>
   <div data-role="content">
     <ul data-role="listview" data-theme="c">
@@ -8,7 +11,7 @@
     <% @estaciones.each do |estacion| %>
     <li>
       <a href="<%=estacion_path(estacion)%>">
-        <img src="<%=image_path estacion.imagen%>" />
+        <img class="estacion" src="<%=image_path estacion.imagen%>" />
         <h3><%=estacion.nombre%></h3>
         <p>Teléfono: 55583478</p>
         <span class="ui-li-count">10</span>
