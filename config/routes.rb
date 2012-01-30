@@ -1,4 +1,6 @@
 Camaras::Application.routes.draw do
+  root :to => 'lineas#index'
+
   resources :estaciones
 
   resources :camaras
