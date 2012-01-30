@@ -1,16 +1,33 @@
-<div data-role="header">
-  <h1><%= @linea.nombre %></h1>
-  <a data-rel="back" data-theme="b">Back</a>
-</div>
-<div data-role="content">
+<div data-role="page">
+  <div data-role="header" class="linea-<%= @linea.nombre %>">
+    <h1>Línea <%= @linea.nombre %></h1>
+  </div>
+  <div data-role="content">
     <ul data-role="listview" data-theme="c">
 
-<% @estaciones.each do |estacion| %>
-  <li>
-    <%= link_to estacion.nombre, estacion_path(estacion) %>
-  </li>
+<%
+imagen = ""
+if @linea.nombre == '1'
+imagen = image_path 'observatorio.png'
+elsif @linea.nombre == '2'
+imagen = image_path 'tasquena.png'
+elsif @linea.nombre == '3'
+imagen = image_path 'indiosverdes.png'
+end
 
-<% end %>
-  </ul>
+%>
+
+    <% @estaciones.each do |estacion| %>
+    <li>
+      <a href="<%=estacion_path(estacion)%>">
+        <img src="<%=imagen%>" />
+        <h3><%=estacion.nombre%></h3>
+        <p>Teléfono: 55583478</p>
+        <span class="ui-li-count">10</span>
+      </a>
+    </li>
+
+    <% end %>
+    </ul>
+  </div>
 </div>
-

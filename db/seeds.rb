@@ -7,9 +7,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-1.upto(9) { |i|  Linea.create :nombre => "linea #{i}"}
-Linea.create :nombre => "linea A"
-Linea.create :nombre => "linea B"
+1.upto(9) { |i|  Linea.create :nombre => "#{i}"}
+Linea.create :nombre => "A"
+Linea.create :nombre => "B"
 
 estaciones_linea1 = 
 ['Observatorio','Tacubaya','Juanacatlán','Chapultepec','Sevilla','Insurgentes','Cuauhtémoc','Balderas','Salto del Agua','Isabel la Católica','Pino Suárez','Merced','Candelaria','San Lázaro','Moctezuma','Balbuena','Boulevard Puerto Aéreo',

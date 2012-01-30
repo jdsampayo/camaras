@@ -1,0 +1,49 @@
+html, body {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  -webkit-user-select:none;
+  -webkit-text-size-adjust:none;
+}
+
+.ui-page {
+  background: #2b2623!important;
+  z-index: 1;
+  -webkit-backface-visibility:hidden!important;
+  color: #acafab;
+}
+
+.ui-header{
+  background: #FF7400;
+  border: #FF7400;
+  height: 45px;
+
+  .ui-btn{
+    margin-top:3px;
+  }
+}
+
+.ui-title{
+  position:relative;
+  top:5px;
+}
+
+.ui-btn-active{
+  background: #000!important;
+}
+
+/*
+.ui-listview{
+  .ui-btn-text a{
+    color:#FFF!important;
+    text-shadow:0 1px 0 #2b2623;
+  }
+  li:nth-child(even){
+    background:#FFB273!important;
+  }
+  .ui-btn-up-c:nth-child(odd), .ui-btn-hover-c:nth-child(odd), .ui-btn-down-c:nth-child(odd){
+    background:#FF9640;
+  }
+  .ui-btn-up-c:nth-child(even), .ui-btn-hover-c:nth-child(even), .ui-btn-down-c:nth-child(even){
+    background:#FFB273;
+  }
+}
+*/

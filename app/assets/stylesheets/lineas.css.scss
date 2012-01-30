@@ -1,3 +1,71 @@
 // Place all the styles related to the lineas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.lineas-section{
+  .ui-header{
+    .ui-title {
+      position:relative;
+      top:-20px;
+    }
+
+    img {
+      width: 94px;
+      height: 21px;
+      position:relative;
+      top:10px;
+      left:15px;
+    }
+  }
+
+  .ui-li-icon{
+    margin-top:-2px;
+    width:16px;
+    height:16px;
+  }
+}
+
+.linea-1{
+  background: #e76495!important;
+  border: #F69bf1;
+}
+.linea-2{
+  background: #1267aa!important;
+  border: #0084ff;
+}
+.linea-3{
+  background: #ae9d27!important;
+  border: #bdbd00;
+}
+.linea-4{
+  background: #a5d6de!important;
+  border: #a5d6de;
+}
+.linea-5{
+  background: #f9ea00!important;
+  border: #fff000;
+}
+.linea-6{
+  background: #ff0000!important;
+  border: #ff0000;
+}
+.linea-7{
+  background: #0084ff!important;
+  border: #0084ff;
+}
+.linea-8{
+  background: #ff8400!important;
+  border: #ff8400;
+}
+.linea-9{
+  background: #844200!important;
+  border: #844200;
+}
+.linea-A{
+  background: #bd00bd!important;
+  border: #bd00bd;
+}
+.linea-B{
+  background: #848484!important;
+  border: #848484;
+}
