@@ -14,7 +14,7 @@ class EstacionesController < ApplicationController
   # GET /estaciones/1.json
   def show
     @estacion = Estacion.find(params[:id])
-
+    @camaras = Camara.all
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @estacion }
