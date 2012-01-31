@@ -81,6 +81,9 @@ estaciones_lineaB.each_with_index do |estacion,index|
 end
 
 Camara.create :descripcion => "Pasillo 1"
+Camara.create :descripcion => "Torniquetes"
+Camara.create :descripcion => "Taquillas"
+Camara.create :descripcion => "Pasillo 2"
 
 
 

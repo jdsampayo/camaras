@@ -10,7 +10,6 @@
     <% @lineas.each do |linea| %>
     <li>
       <a href="<%=linea_path(linea)%>">
-        <img src="<%=image_path(linea.nombre.downcase + '.png')%>" class="ui-li-icon" />
         <%=linea.nombre%> : <%=linea.estaciones.first.nombre%> - <%=linea.estaciones.last.nombre%>
       </a>
     </li>
