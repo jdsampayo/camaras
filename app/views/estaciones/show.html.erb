@@ -1,28 +1,25 @@
-<div data-role="page">
-  <div data-role="header" data-position="inline" >
+<div data-role="page" class="linea-<%= @estacion.linea.nombre %>">
+  <div data-role="header" data-position="inline" class="linea-<%= @estacion.linea.nombre %>">
+    <a data-rel="back" class="atras-<%= @estacion.linea.nombre %>">Atrás</a>
     <h1><%= @estacion.nombre %></h1>
   </div>
 
   <div data-role="content">
     <ul data-role="listview" data-theme="c" data-divider-theme="a">
-      <li data-role="list-divider">Salida 1</li>
-      <% @camaras.each do |camara| %>
+      <% divider = "" %>
+      <% @camaras.each do |camara|
+        divider_aux = camara.descripcion.split(' ')[0]
+        if divider != divider_aux then
+          divider = divider_aux %>
+          <li data-role="list-divider"><%=divider%>s</li>
+      <%end%>
       <li>
-	<a href="<%=camara_path(camara)%>">
+        <a href="<%=camara_path(camara)%>">
           <%=camara.descripcion%>
-	</a>
+        </a>
       </li>
       <% end %>
-      <li data-role="list-divider">Pasillo principal</li>
-      <% @camaras.each do |camara| %>
-      <li>
-	<a href="<%=camara_path(camara)%>">
-          <%=camara.descripcion%>
-	</a>
-      </li>
 
-
-    <% end %>
     </ul>
   </div>
 </div>

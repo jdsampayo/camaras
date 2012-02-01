@@ -80,13 +80,13 @@ estaciones_lineaB.each_with_index do |estacion,index|
   Estacion.create :nombre => estacion, :linea_id => 11,:imagen => "Estaciones/B/#{index+1}.jpg"
 end
 
-Camara.create :descripcion => "Pasillo 1"
-Camara.create :descripcion => "Torniquetes"
-Camara.create :descripcion => "Taquillas"
-Camara.create :descripcion => "Pasillo 2"
+nombres = %w[Pasillo Torniquete Taquilla Salida]
 
-
-
-
-
-
+1.upto(Estacion.count) do |e|
+  nombres.each do |nombre|
+    cuantos = (rand*10).truncate + 1
+    1.upto(cuantos) do |i|
+      Camara.create :descripcion => "#{nombre} #{i}", :estacion_id => e
+    end
+  end
+end
