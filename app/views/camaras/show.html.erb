@@ -1,6 +1,7 @@
 <div data-role="page">
-  <div data-role="header" data-position="inline" >
-    <h1>Camara</h1>
+  <div data-role="header" data-position="inline" class="linea-<%= @camara.estacion.linea.nombre %>">
+    <a data-rel="back" class="atras-<%= @camara.estacion.linea.nombre %>"><%= @camara.estacion.nombre[0..8] %><%=@camara.estacion.nombre.length > 9 ? '...' : ''%></a>
+    <h1><%=@camara.descripcion%></h1>
   </div>
 <div data-role="content">
   <video autoplay="autoplay" controls="controls" >
