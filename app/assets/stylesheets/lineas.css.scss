@@ -101,21 +101,10 @@
   border: #a3277d;
 }
 .linea-B{
-  background: #b9bab5!important;
-  border: #b9bab5;
+  background-image: linear-gradient(top,#108c65 50%,#b9bab5 50%)!important;
+  background-image: -moz-linear-gradient(top,#108c65 50%,#b9bab5 50%)!important;
+  background-image: -webkit-linear-gradient(top,#108c65 50%,#b9bab5 50%)!important;
 }
-
-.linea-B-2{
-  background: #108c65!important;
-  border: #108c65;
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 23px;
-  top: 0px;
-  left: 0px;
-}
-
 
 .atras-1{
   background-image: linear-gradient(top,#eb7ca5 43%,#8f1442 86%)!important;
