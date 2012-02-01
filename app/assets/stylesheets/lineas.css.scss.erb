@@ -111,6 +111,7 @@
   background-image: linear-gradient(top,#108c65 50%,#b9bab5 50%)!important;
   background-image: -moz-linear-gradient(top,#108c65 50%,#b9bab5 50%)!important;
   background-image: -webkit-linear-gradient(top,#108c65 50%,#b9bab5 50%)!important;
+  border: #b9bab5;
 }
 
 <%
@@ -128,6 +129,13 @@ lineas.each_with_index do | linea, index |
   background-image:     -ms-linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important; /* IE10 */
   background-image:      -o-linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important; /* Opera 11.10+ */
   background-image:         linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important;
+
+  <%if linea == "B"%>
+  background-image: linear-gradient(top,<%=colores_iniciales[index]%> 50%,<%=colores_finales[index]%> 50%)!important;
+  background-image: -moz-linear-gradient(top,<%=colores_iniciales[index]%> 50%,<%=colores_finales[index]%> 50%)!important;
+  background-image: -webkit-linear-gradient(top,<%=colores_iniciales[index]%> 50%,<%=colores_finales[index]%> 50%)!important;
+  <%end%>
+
   border: <%=bordes[index]%>;
 }
 <%
