@@ -11,7 +11,7 @@
             <img class="estacion" src="<%=image_path estacion.imagen%>" />
             <h3><%=estacion.nombre%></h3>
             <p>Teléfono: 55583478</p>
-            <span class="ui-li-count">10</span>
+            <span class="ui-li-count"><%=estacion.camaras.count%></span>
 	  </a>
 	</li>
 	<% end %>
