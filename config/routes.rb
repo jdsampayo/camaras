@@ -7,6 +7,7 @@ Camaras::Application.routes.draw do
 
   resources :lineas
 
+  match "/tablero" => "lineas#tablero"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

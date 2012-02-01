@@ -1,22 +1,25 @@
 <div data-role="page" class="linea-<%= @linea.nombre %>">
   <div data-role="header" class="linea-<%= @linea.nombre %>">
-    <a data-rel="back" data-icon="home" class="atras-<%= @linea.nombre %>">Home</a>
-<h1>Línea <%= @linea.nombre %></h1>
+    <% if @linea.nombre == "B" %>
+    <span class="linea-B-2"></span>
+    <% end %>    
+    <a data-rel="back" class="atras-<%= @linea.nombre %>">Atrás</a>
+    <h1>Línea <%= @linea.nombre %></h1>
   </div>
   <div data-role="content">
     <ul data-role="listview" data-theme="c">
-
-    <% @estaciones.each do |estacion| %>
-    <li>
-      <a href="<%=estacion_path(estacion)%>">
-        <img class="estacion" src="<%=image_path estacion.imagen%>" />
-        <h3><%=estacion.nombre%></h3>
-        <p>Teléfono: 55583478</p>
-        <span class="ui-li-count"><%=estacion.camaras.count%></span>
-      </a>
-    </li>
-
-    <% end %>
+      
+      <% @estaciones.each do |estacion| %>
+      <li>
+	<a href="<%=estacion_path(estacion)%>">
+          <img class="estacion" src="<%=image_path estacion.imagen%>" />
+          <h3><%=estacion.nombre%></h3>
+          <p>Teléfono: 55583478</p>
+          <span class="ui-li-count">10</span>
+	</a>
+      </li>
+      
+      <% end %>
     </ul>
   </div>
 </div>
