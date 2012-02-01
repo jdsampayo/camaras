@@ -106,79 +106,26 @@
   background-image: -webkit-linear-gradient(top,#108c65 50%,#b9bab5 50%)!important;
 }
 
-.atras-1{
-  /*background-image: linear-gradient(top,#eb7ca5 43%,#8f1442 86%)!important;
-  background-image: -moz-linear-gradient(top,#eb7ca5 43%,#8f1442 86%)!important;
-  background-image: -webkit-linear-gradient(top,#eb7ca5 43%,#8f1442 86%)!important;*/
-  
-  background-image: -webkit-gradient(linear, left top, left bottom, from( #eb7ca5), to( #8f1442 ))!important; /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient(#eb7ca5, #8f1442)!important; /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient(#eb7ca5, #8f1442)!important; /* FF3.6 */
-	background-image:     -ms-linear-gradient(#eb7ca5, #8f1442)!important; /* IE10 */
-	background-image:      -o-linear-gradient(#eb7ca5, #8f1442)!important; /* Opera 11.10+ */
-	background-image:         linear-gradient(#eb7ca5, #8f1442)!important;
-  border: #8c0a3a;
+<%
+colores_iniciales = %w[#eb7ca5 #4697d4 #d7c858 #84c8c1 #fec920 #d91b4b #ec783e #17b585 #834a46 #ba3e95 #055b41]
+colores_finales =   %w[#8f1442 #06416f #71650c #45968d #d1a000 #a8002a #bd4e16 #00815a #4a1e1a #861865 #8b8b89]
+bordes =            %w[#8c0a3a #082873 #3f3800 #002723 #3f3000 #3a000e #3f1500 #002a1d #3f0500 #300021 #002a1d]
+lineas = %w[1 2 3 4 5 6 7 8 9 A B]
+
+lineas.each_with_index do | linea, index |
+%>
+.atras-<%=linea%>{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(<%=colores_iniciales[index]%>), to(<%=colores_finales[index]%>))!important; /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important; /* Chrome 10+, Saf5.1+ */
+  background-image:    -moz-linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important; /* FF3.6 */
+  background-image:     -ms-linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important; /* IE10 */
+  background-image:      -o-linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important; /* Opera 11.10+ */
+  background-image:         linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important;
+  border: <%=bordes[index]%>;
 }
-.atras-2{
-  background-image: linear-gradient(top,#4697d4 43%,#06416f 86%)!important;
-  background-image: -moz-linear-gradient(top,#4697d4 43%,#06416f 86%)!important;
-  background-image: -webkit-linear-gradient(top,#4697d4 43%,#06416f 86%)!important;
-  border: #082873;
-}
-.atras-3{
-  background-image: linear-gradient(top,#d7c858 43%,#71650c 86%)!important;
-  background-image: -moz-linear-gradient(top,#d7c858 43%,#71650c 86%)!important;
-  background-image: -webkit-linear-gradient(top,#d7c858 43%,#71650c 86%)!important;
-  border: #3f3800;
-}
-.atras-4{
-  background-image: linear-gradient(top,#84c8c1 43%,#45968d 86%)!important;
-  background-image: -moz-linear-gradient(top,#84c8c1 43%,#45968d 86%)!important;
-  background-image: -webkit-linear-gradient(top,#84c8c1 43%,#45968d 86%)!important;
-  border: #002723;
-}
-.atras-5{
-  background-image: linear-gradient(top,#fec920 43%,#d1a000 86%)!important;
-  background-image: -moz-linear-gradient(top,#fec920 43%,#d1a000 86%)!important;
-  background-image: -webkit-linear-gradient(top,#fec920 43%,#d1a000 86%)!important;
-  border: #3f3000;
-}
-.atras-6{
-  background-image: linear-gradient(top,#d91b4b 43%,#a8002a 86%)!important;
-  background-image: -moz-linear-gradient(top,#d91b4b 43%,#a8002a 86%)!important;
-  background-image: -webkit-linear-gradient(top,#d91b4b 43%,#a8002a 86%)!important;
-  border: #3a000e;
-}
-.atras-7{
-  background-image: linear-gradient(top,#ec783e 43%,#bd4e16 86%)!important;
-  background-image: -moz-linear-gradient(top,#ec783e 43%,#bd4e16 86%)!important;
-  background-image: -webkit-linear-gradient(top,#ec783e 43%,#bd4e16 86%)!important;
-  border: #3f1500;
-}
-.atras-8{
-  background-image: linear-gradient(top,#17b585 43%,#00815a 86%)!important;
-  background-image: -moz-linear-gradient(top,#17b585 43%,#00815a 86%)!important;
-  background-image: -webkit-linear-gradient(top,#17b585 43%,#00815a 86%)!important;
-  border: #002a1d;
-}
-.atras-9{
-  background-image: linear-gradient(top,#834a46 43%,#4a1e1a 86%)!important;
-  background-image: -moz-linear-gradient(top,#834a46 43%,#4a1e1a 86%)!important;
-  background-image: -webkit-linear-gradient(top,#834a46 43%,#4a1e1a 86%)!important;
-  border: #3f0500;
-}
-.atras-A{
-  background-image: linear-gradient(top,#ba3e95 43%,#861865 86%)!important;
-  background-image: -moz-linear-gradient(top,#ba3e95 43%,#861865 86%)!important;
-  background-image: -webkit-linear-gradient(top,#ba3e95 43%,#861865 86%)!important;
-  border: #300021;
-}
-.atras-B{
-  background-image: linear-gradient(top,#055b41 50%,#8b8b89 50%)!important;
-  background-image: -moz-linear-gradient(top,#055b41 50%,#8b8b89 50%)!important;
-  background-image: -webkit-linear-gradient(top,#055b41 50%,#8b8b89 50%)!important;
-  border: #002a1d;
-}
+<%
+end
+%>
 
 .division-1{
   background: #f38cb2 !important;
