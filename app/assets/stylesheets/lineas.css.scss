@@ -107,9 +107,16 @@
 }
 
 .atras-1{
-  background-image: linear-gradient(top,#eb7ca5 43%,#8f1442 86%)!important;
+  /*background-image: linear-gradient(top,#eb7ca5 43%,#8f1442 86%)!important;
   background-image: -moz-linear-gradient(top,#eb7ca5 43%,#8f1442 86%)!important;
-  background-image: -webkit-linear-gradient(top,#eb7ca5 43%,#8f1442 86%)!important;
+  background-image: -webkit-linear-gradient(top,#eb7ca5 43%,#8f1442 86%)!important;*/
+  
+  background-image: -webkit-gradient(linear, left top, left bottom, from( #eb7ca5), to( #8f1442 ))!important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(#eb7ca5, #8f1442)!important; /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient(#eb7ca5, #8f1442)!important; /* FF3.6 */
+	background-image:     -ms-linear-gradient(#eb7ca5, #8f1442)!important; /* IE10 */
+	background-image:      -o-linear-gradient(#eb7ca5, #8f1442)!important; /* Opera 11.10+ */
+	background-image:         linear-gradient(#eb7ca5, #8f1442)!important;
   border: #8c0a3a;
 }
 .atras-2{

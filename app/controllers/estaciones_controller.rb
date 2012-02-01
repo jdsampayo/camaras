@@ -3,6 +3,7 @@ class EstacionesController < ApplicationController
   # GET /estaciones.json
   def index
     @estaciones = Estacion.all
+    # quitando duplicados
 
     respond_to do |format|
       format.html # index.html.erb
