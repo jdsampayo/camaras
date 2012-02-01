@@ -1,3 +1,8 @@
+@font-face {
+  font-family: MetroDF;
+  src: url(<%=asset_path('METRO-DF.ttf')%>);
+}
+
 html, body {
   font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   -webkit-user-select:none;
@@ -15,6 +20,9 @@ html, body {
   background: #FF7400;
   border: #FF7400;
   height: 45px;
+
+  text-transform: uppercase;
+  font-family: MetroDF;
 
   .ui-btn{
     margin-top:3px;
