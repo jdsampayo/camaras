@@ -1,27 +1,21 @@
-<h1>Listing estaciones</h1>
-
-<table>
-  <tr>
-    <th>Nombre</th>
-    <th>Linea</th>
-    <th>Imagen</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @estaciones.each do |estacion| %>
-  <tr>
-    <td><%= estacion.nombre %></td>
-    <td><%= estacion.linea_id %></td>
-    <td><%= estacion.imagen %></td>
-    <td><%= link_to 'Show', estacion %></td>
-    <td><%= link_to 'Edit', edit_estacion_path(estacion) %></td>
-    <td><%= link_to 'Destroy', estacion, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Estacion', new_estacion_path %>
+<div data-role="page">
+  <div data-role="header">
+    <h1>Estaciones</h1>
+  </div>
+  
+  <div data-role="content">
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="Filtrar estaciones" data-theme="c">
+	<% @estaciones.each do |estacion| %>
+	<li>
+	  <a href="<%=estacion_path(estacion)%>">
+            <img class="estacion" src="<%=image_path estacion.imagen%>" />
+            <h3><%=estacion.nombre%></h3>
+            <p>Teléfono: 55583478</p>
+            <span class="ui-li-count">10</span>
+	  </a>
+	</li>
+	<% end %>
+	
+      </ul>
+    </div>
+</div>
