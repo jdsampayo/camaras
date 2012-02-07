@@ -6,12 +6,13 @@
 
   <div data-role="content">
     <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar" data-theme="c" data-divider-theme="a" class="linea-<%= @estacion.linea.nombre %>">
-      <% divider = "" %>
+      <% divider = ""
+	 nombre_dividers={ 'Ac'=> 'Accesos', 'To' => 'Torniquetes', 'Ta' => 'Taquillas', 'An' => 'Andenes'}%>
       <% @camaras.each do |camara|
         divider_aux = camara.descripcion.split(' ')[0]
         if divider != divider_aux then
           divider = divider_aux %>
-          <li data-role="list-divider" class="division-<%= @estacion.linea.nombre %>"><%=divider.pluralize%></li>
+          <li data-role="list-divider" class="division-<%= @estacion.linea.nombre %>"><%=nombre_dividers[divider[0..1]]%></li>
       <%end%>
       <li>
         <a href="<%=camara_path(camara)%>">

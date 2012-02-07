@@ -80,7 +80,7 @@ estaciones_lineaB.each_with_index do |estacion,index|
   Estacion.create :nombre => estacion, :linea_id => 11,:imagen => "Estaciones/B/#{index+1}.jpg"
 end
 
-nombres = %w[Acceso Torniquete Taquilla Anden]
+nombres = %w[Acc Tor Taq Anden]
 
 1.upto(Estacion.count) do |e|
   nombres.each do |nombre|
