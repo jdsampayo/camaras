@@ -1,0 +1,188 @@
+// Place all the styles related to the lineas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.lineas-section{
+  .ui-header{
+    .ui-title {
+      position:relative;
+      top:-20px;
+    }
+
+    img {
+      width: 94px;
+      height: 21px;
+      position:relative;
+      top:10px;
+      left:15px;
+    }
+  }
+
+  .ui-li-icon{
+    margin-top:-2px;
+    width:16px;
+    height:16px;
+  }
+  
+  .linea-activa-1.ui-btn-active{
+    background: #e76495!important;
+  }
+
+  .linea-activa-2.ui-btn-active{
+    background: #1267aa!important;
+  }
+  .linea-activa-3.ui-btn-active{
+    background: #ae9e25!important;
+  }
+  .linea-activa-4.ui-btn-active{
+    background: #6fb6ae!important;
+  }
+  .linea-activa-5.ui-btn-active{
+    background: #fdc100!important;
+  }
+  .linea-activa-6.ui-btn-active{
+    background: #cc0033!important;
+  }
+  .linea-activa-7.ui-btn-active{
+    background: #e56524!important;
+  }
+  .linea-activa-8.ui-btn-active{
+    background: #009c6d!important;
+  }
+  .linea-activa-9.ui-btn-active{
+    background: #5a2d2a!important;
+  }
+  .linea-activa-A.ui-btn-active{
+    background: #a3277d!important;
+  }
+  .linea-activa-B.ui-btn-active{
+    background: #b9bab5!important;
+  }
+}
+
+.linea-1{
+  background: #e76495!important;
+  border: #e76495;
+}
+.linea-2{
+  background: #1267aa!important;
+  border: #0084ff;
+}
+.linea-3{
+  background: #ae9e25!important;
+  border: #ae9e25;
+}
+.linea-4{
+  background: #6fb6ae!important;
+  border: #6fb6ae;
+}
+.linea-5{
+  background: #fdc100!important;
+  border: #fdc100;
+}
+.linea-6{
+  background: #cc0033!important;
+  border: #cc0033;
+}
+.linea-7{
+  background: #e56524!important;
+  border: #e56524;
+}
+.linea-8{
+  background: #009c6d!important;
+  border: #009c6d;
+}
+.linea-9{
+  background: #5a2d2a!important;
+  border: #5a2d2a;
+}
+.linea-A{
+  background: #a3277d!important;
+  border: #a3277d;
+}
+.linea-B{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#108c65), to(#b9bab5))!important; /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#108c65, #b9bab5)!important; /* Chrome 10+, Saf5.1+ */
+  background-image:    -moz-linear-gradient(#108c65, #b9bab5)!important; /* FF3.6 */
+  background-image:     -ms-linear-gradient(#108c65, #b9bab5)!important; /* IE10 */
+  background-image:      -o-linear-gradient(#108c65, #b9bab5)!important; /* Opera 11.10+ */
+  background-image:         linear-gradient(#108c65, #b9bab5)!important;
+
+  background-image: linear-gradient(top,#108c65 50%,#b9bab5 50%)!important;
+  background-image: -moz-linear-gradient(top,#108c65 50%,#b9bab5 50%)!important;
+  background-image: -webkit-linear-gradient(top,#108c65 50%,#b9bab5 50%)!important;
+  border: #b9bab5;
+}
+
+<%
+colores_iniciales = %w[#eb7ca5 #4697d4 #d7c858 #84c8c1 #fec920 #d91b4b #ec783e #17b585 #834a46 #ba3e95 #055b41]
+colores_finales =   %w[#8f1442 #06416f #71650c #45968d #d1a000 #a8002a #bd4e16 #00815a #4a1e1a #861865 #8b8b89]
+bordes =            %w[#8c0a3a #082873 #3f3800 #002723 #3f3000 #3a000e #3f1500 #002a1d #3f0500 #300021 #002a1d]
+lineas = %w[1 2 3 4 5 6 7 8 9 A B]
+
+lineas.each_with_index do | linea, index |
+%>
+.atras-<%=linea%>{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(<%=colores_iniciales[index]%>), to(<%=colores_finales[index]%>))!important; /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important; /* Chrome 10+, Saf5.1+ */
+  background-image:    -moz-linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important; /* FF3.6 */
+  background-image:     -ms-linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important; /* IE10 */
+  background-image:      -o-linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important; /* Opera 11.10+ */
+  background-image:         linear-gradient(<%=colores_iniciales[index]%>, <%=colores_finales[index]%>)!important;
+
+  <%if linea == "B"%>
+  background-image: linear-gradient(top,<%=colores_iniciales[index]%> 50%,<%=colores_finales[index]%> 50%)!important;
+  background-image: -moz-linear-gradient(top,<%=colores_iniciales[index]%> 50%,<%=colores_finales[index]%> 50%)!important;
+  background-image: -webkit-linear-gradient(top,<%=colores_iniciales[index]%> 50%,<%=colores_finales[index]%> 50%)!important;
+  <%end%>
+
+  border: <%=bordes[index]%>;
+}
+<%
+end
+%>
+
+.division-1{
+  background: #f38cb2 !important;
+  border: #e76495;
+}
+.division-2{
+  background: #4697d4 !important;
+  border: #0084ff;
+}
+.division-3{
+  background: #d7c858!important;
+  border: #ae9e25;
+}
+.division-4{
+  background: #9bdbd4!important;
+  border: #6fb6ae;
+}
+.division-5{
+  background: #fed140!important;
+  border: #fdc100;
+}
+.division-6{
+  background: #e63965!important;
+  border: #cc0033;
+}
+.division-7{
+  background: #f28d59!important;
+  border: #e56524;
+}
+.division-8{
+  background: #33ce9f!important;
+  border: #009c6d;
+}
+.division-9{
+  background: #5a2d2a!important;
+  border: #5a2d2a;
+}
+.division-A{
+  background: #d15aad!important;
+  border: #a3277d;
+}
+.division-B{
+  background: #dcddd8!important;
+  border: #002a1d;
+}

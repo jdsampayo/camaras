@@ -1,17 +1,17 @@
-<div data-role="page" class="linea-<%= @estacion.linea.nombre %>">
+<div data-role="page">
   <div data-role="header" data-position="inline" class="linea-<%= @estacion.linea.nombre %>">
     <a data-rel="back" data-icon="arrow-l" class="atras-<%= @estacion.linea.nombre %>">Atrás</a>
     <h1><%= @estacion.nombre %></h1>
   </div>
 
   <div data-role="content">
-    <ul data-role="listview" data-theme="c" data-divider-theme="a">
+    <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar" data-theme="c" data-divider-theme="a" class="linea-<%= @estacion.linea.nombre %>">
       <% divider = "" %>
       <% @camaras.each do |camara|
         divider_aux = camara.descripcion.split(' ')[0]
         if divider != divider_aux then
           divider = divider_aux %>
-          <li data-role="list-divider" class="division-<%= @estacion.linea.nombre %>"><%=divider%>s</li>
+          <li data-role="list-divider" class="division-<%= @estacion.linea.nombre %>"><%=divider.pluralize%></li>
       <%end%>
       <li>
         <a href="<%=camara_path(camara)%>">

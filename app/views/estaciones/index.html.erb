@@ -1,11 +1,11 @@
-<div data-role="page" class="linea-7">
-  <div data-role="header" data-position="inline">
+<div data-role="page">
+  <div data-role="header" data-position="inline" class="linea-7">
     <a data-rel="back" data-icon="home" class="atras-7">Home</a>
     <h1>Estaciones</h1>
   </div>
   
   <div data-role="content">
-      <ul data-role="listview" data-filter="true" data-filter-placeholder="Filtrar estaciones" data-theme="c">
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar" data-theme="c" class="linea-7">
 	<% @estaciones.each do |estacion| %>
 	<li>
 	  <a href="<%=estacion_path(estacion)%>">
@@ -20,3 +20,4 @@
       </ul>
     </div>
 </div>
+
