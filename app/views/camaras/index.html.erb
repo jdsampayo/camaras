@@ -1,25 +1,32 @@
-<h1>Listing camaras</h1>
+<div data-role="page">
+  <div data-role="header" data-position="inline" class="linea-7">
+    <a data-rel="back" data-icon="arrow-l" class="atras-7">Atrás</a>
+    <h1>Cámaras</h1>
+  </div>
 
-<table>
-  <tr>
-    <th>Descripcion</th>
-    <th>Estacion</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <div data-role="content">
+    <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar" data-theme="c" data-divider-theme="a" class="linea-7">
 
-<% @camaras.each do |camara| %>
-  <tr>
-    <td><%= camara.descripcion %></td>
-    <td><%= camara.estacion_id %></td>
-    <td><%= link_to 'Show', camara %></td>
-    <td><%= link_to 'Edit', edit_camara_path(camara) %></td>
-    <td><%= link_to 'Destroy', camara, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+<% divider = ""
+	 nombre_dividers={ 'Ac'=> 'Accesos', 'To' => 'Torniquetes', 'Ta' => 'Taquillas', 'An' => 'Andenes'}%>
+      <% @camaras.each do |camara|
+        divider_aux = camara.descripcion.split(' ')[0]
+        if divider != divider_aux then
+          divider = divider_aux %>
+          <li data-role="list-divider" class="division-7"><%=nombre_dividers[divider[0..1]]%></li>
+      <%end%>
+      <li>
+        <a href="<%=camara_path(camara)%>">
+          <%=camara.descripcion%>
+        </a>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
 
-<br />
 
-<%= link_to 'New Camara', new_camara_path %>
+
+
+
+

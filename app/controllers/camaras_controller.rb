@@ -2,7 +2,7 @@ class CamarasController < ApplicationController
   # GET /camaras
   # GET /camaras.json
   def index
-    @camaras = Camara.all
+    @camaras = Camara.order('descripcion').all
 
     respond_to do |format|
       format.html # index.html.erb
