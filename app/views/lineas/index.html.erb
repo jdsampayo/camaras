@@ -1,9 +1,7 @@
 <div data-role="page" class="lineas-section">
   <div data-role="header" data-position="inline" >
-    <img alt="STC Metro" src="<%=image_path 'logo.png'%>" />
-    <a class="ui-btn-left atras-7"  href="<%= url_for :action => :tablero %>">Tablero</a>
+    <a class="ui-btn-left atras-7" data-rel="back">Atrás</a>
     <h1>Líneas</h1>
-    <a class="ui-btn-right atras-7" data-icon="search" href="<%= url_for :controller => :estaciones, :action => :index %>">Estaciones</a>
   </div>
 
   <div data-role="content">

@@ -1,6 +1,15 @@
-<div data-role="page" class="lineas-section">
+<div data-role="page" class="pagina-gris tablero">
   <div data-role="header" data-position="inline" >
-    <h1>Tablero</h1>
+    <img alt="STC Metro" src="<%=image_path 'logo.png'%>" />
+    <h1>Metro</h1>
   </div>
-  
+
+  <div data-role="content">
+    <div class="ui-grid-a" data-theme="c">
+      <div class="ui-block-a"><a href="<%=lineas_path%>"><img src="<%=image_path('observatorio.png')%>" />Líneas</a></div>
+      <div class="ui-block-b"><a href="<%=estaciones_path%>"><img src="<%=image_path('tasquena.png')%>" />Estaciones</a></div>
+      <div class="ui-block-a"><a href="<%=camaras_path%>"><img src="<%=image_path('indiosverdes.png')%>" />Camaras</a></div>
+      <div class="ui-block-b"><a href="<%=camaras_path%>"><img src="<%=image_path('observatorio.png')%>" />Favoritos</a></div>
+    </div>
+  </div>
 </div>
