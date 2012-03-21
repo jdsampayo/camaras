@@ -81,6 +81,20 @@ estaciones_lineaB.each_with_index do |estacion,index|
 end
 
 =begin
+load Rails.root + 'db' + 'seeds_linea1.rb'
+load Rails.root + 'db' + 'seeds_linea2.rb'
+load Rails.root + 'db' + 'seeds_linea3.rb'
+load Rails.root + 'db' + 'seeds_linea4.rb'
+load Rails.root + 'db' + 'seeds_linea5.rb'
+load Rails.root + 'db' + 'seeds_linea6.rb'
+load Rails.root + 'db' + 'seeds_linea7.rb'
+load Rails.root + 'db' + 'seeds_linea8.rb'
+load Rails.root + 'db' + 'seeds_linea9.rb'
+load Rails.root + 'db' + 'seeds_lineaA.rb'
+load Rails.root + 'db' + 'seeds_lineaB.rb'
+=end
+
+=begin
 
 nombres = %w[Acc Tor Taq Anden]
 
@@ -93,3 +107,4 @@ nombres = %w[Acc Tor Taq Anden]
   end
 end
 =end
+
