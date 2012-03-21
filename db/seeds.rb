@@ -37,48 +37,50 @@ estaciones_lineaA = ["Pantitlán","Agrícola Oriental","Canal de San Juan","Tepa
 estaciones_lineaB = ['Ciudad Azteca','Plaza Aragón','Olímpica','Ecatepec','Muzquiz','Río de los Remedios','Impulsora','Nezahualcóyotl','Villa de Aragón','Bosque de Aragón','Deportivo Oceanía','Oceanía','Romero Rubio','R. Flores Magón','San Lázaro','Morelos','Tepito','Lagunilla','Garibaldi','Guerrero','Buenavista']
 
 estaciones_linea1.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 1,:imagen => "Estaciones/1/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 1,:imagen => "Estaciones/1/#{index+1}.png"
 end
 
 estaciones_linea2.reverse.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 2,:imagen => "Estaciones/2/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 2,:imagen => "Estaciones/2/#{index+1}.png"
 end
 
 estaciones_linea3.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 3,:imagen => "Estaciones/3/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 3,:imagen => "Estaciones/3/#{index+1}.png"
 end
 
 estaciones_linea4.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 4,:imagen => "Estaciones/4/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 4,:imagen => "Estaciones/4/#{index+1}.png"
 end
 
 estaciones_linea5.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 5,:imagen => "Estaciones/5/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 5,:imagen => "Estaciones/5/#{index+1}.png"
 end
 
 estaciones_linea6.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 6,:imagen => "Estaciones/6/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 6,:imagen => "Estaciones/6/#{index+1}.png"
 end
 
 estaciones_linea7.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 7,:imagen => "Estaciones/7/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 7,:imagen => "Estaciones/7/#{index+1}.png"
 end
 
 estaciones_linea8.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 8,:imagen => "Estaciones/8/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 8,:imagen => "Estaciones/8/#{index+1}.png"
 end
 
 estaciones_linea9.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 9,:imagen => "Estaciones/9/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 9,:imagen => "Estaciones/9/#{index+1}.png"
 end
 
 estaciones_lineaA.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 10,:imagen => "Estaciones/A/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 10,:imagen => "Estaciones/A/#{index+1}.png"
 end
 
 estaciones_lineaB.each_with_index do |estacion,index|
-  Estacion.create :nombre => estacion, :linea_id => 11,:imagen => "Estaciones/B/#{index+1}.jpg"
+  Estacion.create :nombre => estacion, :linea_id => 11,:imagen => "Estaciones/B/#{index+1}.png"
 end
+
+=begin
 
 nombres = %w[Acc Tor Taq Anden]
 
@@ -90,3 +92,4 @@ nombres = %w[Acc Tor Taq Anden]
     end
   end
 end
+=end

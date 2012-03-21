@@ -12,7 +12,7 @@
       <% @estaciones.each do |estacion| %>
       <li>
 	<a href="<%=estacion_path(estacion)%>">
-          <img class="estacion" src="<%=image_path estacion.imagen%>" />
+          <img class="estacion" src="/images/<%=estacion.imagen%>" />
           <h3><%=estacion.nombre%></h3>
           <p>Teléfono: 55583478</p>
           <span class="ui-li-count">10</span>
