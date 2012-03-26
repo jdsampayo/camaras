@@ -1070,6 +1070,10 @@ input[type="submit"], button, a.button, input[type=button] {
 	display: none;
 }
 
+#header > h1{
+	display:none;
+}
+
 ul > li{
 	background:#e5e3e3;
 }

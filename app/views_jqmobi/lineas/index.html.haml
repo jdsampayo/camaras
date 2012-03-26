@@ -1,5 +1,5 @@
 %ul
   - @lineas.each do |linea|
     %li
-      %a{href: linea_path(linea)}
+      %a{href: "#linea#{linea.nombre}"}
         =linea.nombre + " : " + linea.estaciones.first.nombre + " - " + linea.estaciones.last.nombre
