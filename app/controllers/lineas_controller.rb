@@ -1,4 +1,6 @@
 class LineasController < ApplicationController
+  before_filter :check_for_mobile
+  
   # GET /lineas
   # GET /lineas.json
   def index
@@ -82,6 +84,10 @@ class LineasController < ApplicationController
   end
 
   def tablero
-    
+    if mobile_device?
+      render :tablero, layout: "application"
+    else
+      render :tablero
+    end
   end
 end

@@ -1,0 +1,43 @@
+%html
+  %head
+    %title= yield :title
+    %meta{"http-equiv" => "Content-type", :content => "text/html; charset=utf-8"} 
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+    %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
+    
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/styles/icons.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/themes/jq.ui.slate.css", :title => "slate"}
+    
+    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.ui.min.js"}
+    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.template.js"}
+    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.carousel.js"}
+    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.drawer.js"}
+    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.alphatable.js"}
+    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.fx.js"}
+    -#%script{type: "text/javascript", charset: "utf-8", src: "/js/touch.js"}
+    %script{type: "text/javascript", charset: "utf-8", src: "/js/picup.js"}
+    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.application.js"}
+
+    %script{:type => 'text/javascript'}
+      :plain
+        $(function(){
+          $.ui.removeFooterMenu();
+          $.ui.toggleHeaderMenu();
+        });
+      =yield :jquery
+    = csrf_meta_tags
+  %body
+    #jQUi
+      #splashscreen.ui-loader
+        #profile_image
+          =image_tag "logo.png"
+        %br
+        %br
+        %span.ui-icon.ui-icon-loading.spin
+        %h1 Comenzando app
+
+      #header
+        =image_tag "logo-metro.png"
+
+      #content
+        =yield

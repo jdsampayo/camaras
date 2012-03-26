@@ -1,0 +1,7 @@
+%ul
+  - @estaciones.each do |estacion|
+    %li
+      %a{href: estacion_path(estacion)}
+        %img.estacion{src: "/images/#{estacion.imagen}"}
+        =estacion.nombre
+

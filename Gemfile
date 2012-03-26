@@ -42,3 +42,5 @@ gem 'therubyracer'
 
 gem 'hirb', :require => nil
 
+gem 'haml'
+gem 'haml-rails'

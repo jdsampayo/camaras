@@ -1,0 +1,28 @@
+-content_for :title do
+  STC
+
+-content_for :jquery do
+  :plain
+    function load_header(){
+      $.ui.toggleHeaderMenu();
+    }
+    
+    function unload_header(){
+      $.ui.toggleHeaderMenu();
+    }
+
+#main.panel{title: 'STC', selected: "true"}
+  .logo
+    =image_tag "logo-metro.png"
+
+  %table.home_buttons
+    %tr
+      %td
+        %a{href: "#lineas"}
+          =image_tag "add_memory.png"
+      %td
+        %a{href: "#estaciones"}
+          =image_tag "profile.png"
+
+#lineas.panel{title: 'Lineas', "data-defer" => lineas_path, "data-load" => "load_header", "data-unload" => "unload_header"}
+#estaciones.panel{title: 'Estaciones', "data-defer" => estaciones_path, "data-load" => "load_header", "data-unload" => "unload_header"}

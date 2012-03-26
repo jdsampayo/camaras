@@ -1,4 +1,6 @@
 class CamarasController < ApplicationController
+  before_filter :check_for_mobile
+
   # GET /camaras
   # GET /camaras.json
   def index

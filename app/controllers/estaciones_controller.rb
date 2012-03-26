@@ -1,4 +1,6 @@
 class EstacionesController < ApplicationController
+  before_filter :check_for_mobile
+  
   # GET /estaciones
   # GET /estaciones.json
   def index
