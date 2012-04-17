@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 nombres = [
 "01 M GAR ANDC V1 L8",
 "02 F GAR ANDP V1 L8",

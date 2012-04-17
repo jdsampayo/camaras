@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 nombres = [
 "01 M PAN ANDC V1 LA",
 "02 F PAN ANDP V1 LA",
@@ -150,7 +152,7 @@ tipos = [
 "F",
 "M"]
 
-estacion = Estacion.where(nombre: "Agrícola Oriental", linea_id: 8).first
+estacion = Estacion.where(nombre: "Agrícola Oriental", linea_id: 10).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
@@ -182,7 +184,7 @@ tipos = [
 "M",
 "F"]
 
-estacion = Estacion.where(nombre: "Canal de San Juan", linea_id: 8).first
+estacion = Estacion.where(nombre: "Canal de San Juan", linea_id: 10).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
@@ -228,7 +230,7 @@ tipos = [
 "M",
 "F"]
 
-estacion = Estacion.where(nombre: "Tepalcates", linea_id: 8).first
+estacion = Estacion.where(nombre: "Tepalcates", linea_id: 10).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
@@ -276,7 +278,7 @@ tipos = [
 "M",
 "F"]
 
-estacion = Estacion.where(nombre: "Guelatao", linea_id: 8).first
+estacion = Estacion.where(nombre: "Guelatao", linea_id: 10).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
@@ -324,7 +326,7 @@ tipos = [
 "M",
 "F"]
 
-estacion = Estacion.where(nombre: "Peñón Viejo", linea_id: 8).first
+estacion = Estacion.where(nombre: "Peñón Viejo", linea_id: 10).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
@@ -358,7 +360,7 @@ tipos = [
 "M",
 "F"]
 
-estacion = Estacion.where(nombre: "Acatitla", linea_id: 8).first
+estacion = Estacion.where(nombre: "Acatitla", linea_id: 10).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
@@ -416,7 +418,7 @@ tipos = [
 "M",
 "F"]
 
-estacion = Estacion.where(nombre: "Santa Martha", linea_id: 8).first
+estacion = Estacion.where(nombre: "Santa Martha", linea_id: 10).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
@@ -458,7 +460,7 @@ tipos = [
 "M",
 "F"]
 
-estacion = Estacion.where(nombre: "Los Reyes", linea_id: 8).first
+estacion = Estacion.where(nombre: "Los Reyes", linea_id: 10).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
@@ -510,12 +512,13 @@ tipos = [
 "M",
 "F"]
 
-estacion = Estacion.where(nombre: "La Paz", linea_id: 8).first
+estacion = Estacion.where(nombre: "La Paz", linea_id: 10).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
   end
 
+=begin
 nombres = [
 "01 M TLPA DEP DES  SOL",
 "02 M TLPA CAS ACCE",
@@ -618,8 +621,9 @@ tipos = [
 "M",
 "M"]
 
-estacion = Estacion.where(nombre: "Talleres La Paz", linea_id: 8).first
+estacion = Estacion.where(nombre: "Talleres La Paz", linea_id: 10).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
   end
+=end

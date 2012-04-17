@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 nombres = [
 "01 M CCA ANDC V1 L2",
 "02 F CCA ANDP V1 L2",
@@ -93,7 +95,7 @@ tipos = ["M",
     Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
   end
   
-  
+
   nombres = [
   "01 M PTN ANDC V1 L2",
   "02 F PTN ANDP V1 L2",

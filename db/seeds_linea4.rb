@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 nombres = [
 "01 M MAR ANDC V1 L4",
 "02 F MAR ANDP V1 L4",
@@ -510,7 +512,7 @@ tipos = [
 "M",
 "M"]
 
- estacion = Estacion.where(nombre: "Sanata Anita", linea_id: 4).first
+ estacion = Estacion.where(nombre: "Santa Anita", linea_id: 4).first
 
   nombres.each_with_index do | nombre, index |
        Camara.create nombre: nombre, tipo: tipos[index], estacion_id: estacion.id
