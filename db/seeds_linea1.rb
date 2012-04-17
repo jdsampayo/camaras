@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
+linea = 1
 #OBSERVATORIO
-estacion = Estacion.where(nombre: "Observatorio", linea_id: 1).first
+estacion = Estacion.where(nombre: "Observatorio", linea_id: linea).first
 nombres = [
   "01 M L1 OBS ANDC V2",
   "02 M L1 OBS VES",
@@ -55,7 +57,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #TACUBAYA
-estacion = Estacion.where(nombre: "Tacubaya", linea_id: 1).first
+estacion = Estacion.where(nombre: "Tacubaya", linea_id: linea).first
 nombres = [
   "01 M TCY ANDC V1 L1",
   "02 F TCY ANDP V1 L1",
@@ -117,7 +119,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #JUANACATLAN
-estacion = Estacion.where(nombre: "Juanacatlán", linea_id: 1).first
+estacion = Estacion.where(nombre: "Juanacatlán", linea_id: linea).first
 nombres = [
   "01 M JNA ANDP V1 L1",
   "02 F JNA ANDC V1 L1",
@@ -153,7 +155,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #CHAPULTEPEC
-estacion = Estacion.where(nombre: "Chapultepec", linea_id: 1).first
+estacion = Estacion.where(nombre: "Chapultepec", linea_id: linea).first
 nombres = [
   "01 M CHP ANDC V1 L1",
   "02 F CHP ANDP V1 L1",
@@ -211,7 +213,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #SEVILLA
-estacion = Estacion.where(nombre: "Sevilla", linea_id: 1).first
+estacion = Estacion.where(nombre: "Sevilla", linea_id: linea).first
 nombres = [
   "01 M SEV ANDC V1 L1",
   "02 F SEV ANDP V1 L1",
@@ -241,7 +243,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #INSURGENTES
-estacion = Estacion.where(nombre: "Insurgentes", linea_id: 1).first
+estacion = Estacion.where(nombre: "Insurgentes", linea_id: linea).first
 nombres = [
   "01 M INS ANDC V1 L1",
   "02 F INS ANDP V1 L1",
@@ -303,7 +305,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #CUAHUTÉMOC
-estacion = Estacion.where(nombre: "Cuauhtémoc", linea_id: 1).first
+estacion = Estacion.where(nombre: "Cuauhtémoc", linea_id: linea).first
 nombres = [
   "01 M CUA ANDC V1 L1",
   "02 F CUA ANDP V1 L1",
@@ -341,7 +343,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #BALDERAS
-estacion = Estacion.where(nombre: "Balderas", linea_id: 1).first
+estacion = Estacion.where(nombre: "Balderas", linea_id: linea).first
 nombres = [
   "01 M BAD ANDC V1 L1",
   "02 F BAD ANDP V1 L1 ",
@@ -397,7 +399,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #SALTO DEL AGUA
-estacion = Estacion.where(nombre: "Salto del Agua", linea_id: 1).first
+estacion = Estacion.where(nombre: "Salto del Agua", linea_id: linea).first
 nombres = [
   "01 M SAL ANDC V1 L1",
   "02 F SAL ANDP V1 L1",
@@ -453,7 +455,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #ISABEL LA CATOLICA
-estacion = Estacion.where(nombre: "Isabel la Católica", linea_id: 1).first
+estacion = Estacion.where(nombre: "Isabel la Católica", linea_id: linea).first
 nombres = [
   "01 M ISA ANDC V1 L1",
   "02 F ISA ANDP V1 L1",
@@ -493,7 +495,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #PINO SUÁREZ
-estacion = Estacion.where(nombre: "Pino Suárez", linea_id: 1).first
+estacion = Estacion.where(nombre: "Pino Suárez", linea_id: linea).first
 nombres = [
   "01 M PIN ANDP V1 L1",
   "02 F PIN ANDC V1 L1",
@@ -539,7 +541,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #MERCED
-estacion = Estacion.where(nombre: "Merced", linea_id: 1).first
+estacion = Estacion.where(nombre: "Merced", linea_id: linea).first
 nombres = [
   "01 M MER ANDC V1 L1",
   "02 F MER ANDP V1 L1",
@@ -569,7 +571,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #CANDELARIA
-estacion = Estacion.where(nombre: "Candelaria", linea_id: 1).first
+estacion = Estacion.where(nombre: "Candelaria", linea_id: linea).first
 nombres = [
   "01 M CAN ANDC V1 L1",
   "02 F CAN ANDP V1 L1",
@@ -609,7 +611,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #SAN LÁZARO
-estacion = Estacion.where(nombre: "San Lázaro", linea_id: 1).first
+estacion = Estacion.where(nombre: "San Lázaro", linea_id: linea).first
 nombres = [
   "01 M SLA ANDC V1 L1",
   "02 F SLA ANDP V1 L1",
@@ -639,7 +641,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #MOCTEZUMA
-estacion = Estacion.where(nombre: "Moctezuma", linea_id: 1).first
+estacion = Estacion.where(nombre: "Moctezuma", linea_id: linea).first
 nombres = [
   "01 M MOC ANDC V1 L1",
   "02 F  MOC ANDP V1 L1",
@@ -665,7 +667,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #BALBUENA
-estacion = Estacion.where(nombre: "Balbuena", linea_id: 1).first
+estacion = Estacion.where(nombre: "Balbuena", linea_id: linea).first
 nombres = [
   "01 M BAL ANDC V1 L1",
   "02 F BAL ANDP V1 L1",
@@ -703,7 +705,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #BOULEVARD PTO AEREO
-estacion = Estacion.where(nombre: "Boulevard Puerto Aéreo", linea_id: 1).first
+estacion = Estacion.where(nombre: "Boulevard Puerto Aéreo", linea_id: linea).first
 nombres = [
   "01 M BOU ANDC V1 L1",
   "02 F BOU ANDP V1 L1",
@@ -743,7 +745,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #GÓMEZ FARÍAS
-estacion = Estacion.where(nombre: "Gómez Farías", linea_id: 1).first
+estacion = Estacion.where(nombre: "Gómez Farías", linea_id: linea).first
 nombres = [
   "01 M GOM ANDC V1 L1",
   "02 F GOM ANDP V1 L1",
@@ -787,7 +789,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #ZARAGOZA
-estacion = Estacion.where(nombre: "Zaragoza", linea_id: 1).first
+estacion = Estacion.where(nombre: "Zaragoza", linea_id: linea).first
 nombres = [
   "01 M ZAR ANDC V1 L1",
   "02 F ZAR ANDP V1 L1",
@@ -829,7 +831,7 @@ nombres.each_with_index do | nombre, index |
 end
 
 #PANTITLÁN
-estacion = Estacion.where(nombre: "Pantitlán", linea_id: 1).first
+estacion = Estacion.where(nombre: "Pantitlán", linea_id: linea).first
 nombres = [
   "01 M PAN ANDC V1 L1",
   "02 M PAN ANDC V1 L1",
