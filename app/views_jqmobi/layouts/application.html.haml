@@ -4,20 +4,23 @@
     %meta{"http-equiv" => "Content-type", :content => "text/html; charset=utf-8"} 
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
     %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
-    
-    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/styles/icons.css"}
-    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/themes/jq.ui.slate.css", :title => "slate"}
-    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/themes/jq.override.css"}
-    
-    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.ui.min.js"}
-    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.template.js"}
-    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.carousel.js"}
-    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.drawer.js"}
-    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.alphatable.js"}
-    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.fx.js"}
+
+    = stylesheet_link_tag    "jqmobi/styles/icons.css", :media => "all"
+    = stylesheet_link_tag    "jqmobi/themes/jq.ui.slate.css", :media => "all"
+
+    = stylesheet_link_tag    "jqmobi/application.css", :media => "all"
+
+    = javascript_include_tag "jqmobi/jq.ui.min.js", charset: "utf-8"
+    = javascript_include_tag "jqmobi/jq.template.js", charset: "utf-8"
+    = javascript_include_tag "jqmobi/jq.carousel.js", charset: "utf-8"
+    = javascript_include_tag "jqmobi/jq.drawer.js", charset: "utf-8"
+    = javascript_include_tag "jqmobi/jq.alphatable.js", charset: "utf-8"
+    = javascript_include_tag "jqmobi/jq.fx.js", charset: "utf-8"
     -#%script{type: "text/javascript", charset: "utf-8", src: "/js/touch.js"}
-    %script{type: "text/javascript", charset: "utf-8", src: "/js/picup.js"}
-    %script{type: "text/javascript", charset: "utf-8", src: "/js/jq.application.js"}
+
+    = javascript_include_tag "jqmobi/picup.js", charset: "utf-8"
+
+    = javascript_include_tag "jqmobi/jq.application.js", charset: "utf-8"
 
     %script{:type => 'text/javascript'}
       :plain
