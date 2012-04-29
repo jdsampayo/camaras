@@ -4,10 +4,11 @@
   <title>Camaras</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  
+
+  <%= stylesheet_link_tag    "jquery.mobile-1.1.0.min.css" %>
+  <%= stylesheet_link_tag    "jquerymobile/application", :media => "all" %>
+  <%= javascript_include_tag "jquerymobile/application" %>
+
   <script type="text/javascript">
     $(document).bind("mobileinit", function(){
       $.mobile.loadingMessage = false;
@@ -16,12 +17,12 @@
       $.mobile.listview.prototype.options.theme = "a";
       $.mobile.loadingMessage = "Cargando...";
       $.mobile.pageLoadErrorMessage = "Error al cargar página.";
-      $.mobile.loadingMessageDelay = 300; 
+      $.mobile.loadingMessageDelay = 300;
+      $.mobile.defaultPageTransition = "slide"
     });
   </script>
 
-  <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-
+  <%= javascript_include_tag "jquery.mobile-1.1.0.min" %>
   <%= csrf_meta_tags %>
 </head>
 <body>

@@ -9,6 +9,8 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require general.css.scss
- *= require_tree .
+ *= require jquerymobile/general.css.scss
+ *= require jquerymobile/lineas.css.scss
+ *= require jquerymobile/estaciones.css.scss
+ *= require jquerymobile/camaras.css.scss
 */
