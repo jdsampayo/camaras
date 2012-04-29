@@ -10,8 +10,5 @@
  *
  *= require_self
  *= require shared/fuente.css.erb
- *= require jquerymobile/general.css.scss
- *= require jquerymobile/lineas.css.scss
- *= require jquerymobile/estaciones.css.scss
- *= require jquerymobile/camaras.css.scss
+ *= require jqmobi/general.css.scss
 */

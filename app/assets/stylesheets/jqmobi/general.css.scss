@@ -1,0 +1,214 @@
+body{
+  background:#e5e3e3;
+  color:#817c7c;
+  font-family: MetroDF;
+}
+
+p {
+  color:#817c7c;
+  background:#e5e3e3;
+}
+
+
+#jQUi{
+	> #header {
+		background:#e9e9e9;
+		border-bottom:solid 1px #817c7c;
+		> h1 {
+			z-index:1;
+			display:none;
+			left:-10px;
+			text-align:center;
+		}
+		
+		img{
+			height:100%;
+		}
+	}
+	
+	.panel{
+		background-color:#e5e3e3;
+	}
+	
+	.logo{
+		margin:40px auto;
+		width:100%;
+		text-align:center;
+		img{
+			width:80%;
+		}
+	}
+	
+	.home_buttons{
+		margin:60px auto;
+		width:100%;
+
+		td{
+			text-align:center;
+		}
+		
+		img{
+			width:80%;
+		}
+	}
+	
+	#profile_image{
+		width:90%;
+		img{
+			max-width:100%;
+			margin-left:5%;
+		}
+	}
+	
+	#backbutton{
+		display: none;
+	}
+	
+}
+
+ul > li{
+	background:#e5e3e3;
+	a{
+		color:black;
+		font-family: MetroDF;
+	}
+	
+	img{
+		height: 80%;
+		margin-top:5px;
+	}
+}
+
+a:active.linea-activa-1{
+    background: #e76495;
+  }
+ a:active.linea-activa-2{
+    background: #1267aa;
+  }
+ a:active.linea-activa-3{
+    background: #ae9e25;
+  }
+ a:active.linea-activa-4{
+    background: #6fb6ae;
+  }
+ a:active.linea-activa-5{
+    background: #fdc100;
+  }
+ a:active.linea-activa-6{
+    background: #cc0033;
+  }
+ a:active.linea-activa-7{
+    background: #e56524;
+  }
+ a:active.linea-activa-8{
+    background: #009c6d;
+  }
+ a:active.linea-activa-9{
+    background: #5a2d2a;
+  }
+ a:active.linea-activa-A{
+    background: #a3277d;
+  }
+ a:active.linea-activa-B{
+    background: #b9bab5;
+  }
+
+a:active.linea-1{
+  background: #e76495;
+  border: #e76495;
+}
+a:active.linea-2{
+  background: #1267aa;
+  border: #0084ff;
+}
+a:active.linea-3{
+  background: #ae9e25;
+  border: #ae9e25;
+}
+a:active.linea-4{
+  background: #6fb6ae;
+  border: #6fb6ae;
+}
+a:active.linea-5{
+  background: #fdc100;
+  border: #fdc100;
+}
+a:active.linea-6{
+  background: #cc0033;
+  border: #cc0033;
+}
+a:active.linea-7{
+  background: #e56524;
+  border: #e56524;
+}
+a:active.linea-8{
+  background: #009c6d;
+  border: #009c6d;
+}
+a:active.linea-9{
+  background: #5a2d2a;
+  border: #5a2d2a;
+}
+a:active.linea-A{
+  background: #a3277d;
+  border: #a3277d;
+}
+a:active.linea-B{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#108c65), to(#b9bab5)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#108c65, #b9bab5); /* Chrome 10+, Saf5.1+ */
+  background-image:    -moz-linear-gradient(#108c65, #b9bab5); /* FF3.6 */
+  background-image:     -ms-linear-gradient(#108c65, #b9bab5); /* IE10 */
+  background-image:      -o-linear-gradient(#108c65, #b9bab5); /* Opera 11.10+ */
+  background-image:         linear-gradient(#108c65, #b9bab5);
+
+  background-image: linear-gradient(top,#108c65 50%,#b9bab5 50%);
+  background-image: -moz-linear-gradient(top,#108c65 50%,#b9bab5 50%);
+  background-image: -webkit-linear-gradient(top,#108c65 50%,#b9bab5 50%);
+  border: #b9bab5;
+}
+
+.division-1{
+  background: #f38cb2 ;
+  border: #e76495;
+}
+.division-2{
+  background: #4697d4 ;
+  border: #0084ff;
+}
+.division-3{
+  background: #d7c858;
+  border: #ae9e25;
+}
+.division-4{
+  background: #9bdbd4;
+  border: #6fb6ae;
+}
+.division-5{
+  background: #fed140;
+  border: #fdc100;
+}
+.division-6{
+  background: #e63965;
+  border: #cc0033;
+}
+.division-7{
+  background: #f28d59;
+  border: #e56524;
+}
+.division-8{
+  background: #33ce9f;
+  border: #009c6d;
+}
+.division-9{
+  background: #5a2d2a;
+  border: #5a2d2a;
+}
+.division-A{
+  background: #d15aad;
+  border: #a3277d;
+}
+.division-B{
+  background: #dcddd8;
+  border: #002a1d;
+}
+
