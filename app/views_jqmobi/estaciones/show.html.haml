@@ -4,6 +4,5 @@
 %ul
   - @camaras.each do |camara|
     %li
-      %a{href: camara_path(camara) , class: "linea-activa-#{@estacion.linea.nombre}"}
-      =camara.nombre
+      %a{href: camara_path(camara), class: "linea-activa-#{@estacion.linea.nombre}"}=camara.nombre
       
