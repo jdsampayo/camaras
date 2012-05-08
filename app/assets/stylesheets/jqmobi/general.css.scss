@@ -79,10 +79,21 @@ ul > li{
   background-image: -webkit-linear-gradient(white,$color-de-listas);
   background-image: linear-gradient(white,$color-de-listas);
 
-	a{
+	> a{
 		border-bottom: 1px solid lightgray;
 		color: black;
+		position: relative;
+	}
 	
+	> a::after{
+		content: " ";
+		background: rgba(0, 0, 0, .4);
+		background-image: url(image_path("images/icons-18-white.png"));
+		background-position: -108px 50%;
+		width: 18px;
+		height: 18px;
+		top: 15px;
+		border-radius: 9px;
 	}
 	
 	img{
