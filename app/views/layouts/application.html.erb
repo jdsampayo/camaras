@@ -11,6 +11,8 @@
 
   <script type="text/javascript">
     $(document).bind("mobileinit", function(){
+      $.mobile.defaultPageTransition = "slide";
+      $.mobile.transitionFallbacks.slideout = "slide";
       $.mobile.loadingMessage = false;
       $.mobile.page.prototype.options.headerTheme = "a";
       $.mobile.page.prototype.options.backBtnText = "Atrás";
@@ -18,11 +20,10 @@
       $.mobile.loadingMessage = "Cargando...";
       $.mobile.pageLoadErrorMessage = "Error al cargar página.";
       $.mobile.loadingMessageDelay = 300;
-      $.mobile.defaultPageTransition = "slide"
     });
   </script>
 
-  <%= javascript_include_tag "jquery.mobile-1.1.0.min" %>
+  <%= javascript_include_tag "jquery.mobile-1.1.0.min.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
