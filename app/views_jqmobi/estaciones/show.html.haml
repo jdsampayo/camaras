@@ -1,6 +1,9 @@
-%h2=@estacion.nombre
+%div{class: "linea-#{@estacion.linea.nombre}"}
+  %h2{class: "linea-#{@estacion.linea.nombre}"}=@estacion.nombre
 
 %ul
   - @camaras.each do |camara|
     %li
+      %a{href: camara_path(camara) , class: "linea-activa-#{@estacion.linea.nombre}"}
       =camara.nombre
+      

@@ -1,7 +1,7 @@
+
 %ul
   - @estaciones.each do |estacion|
     %li
-      %a{href: estacion_path(estacion)} , class: "linea-activa-#{linea.nombre}"
+      %a{href: estacion_path(estacion) , class: "linea-activa-#{estacion.linea.nombre}" }
         %img.estacion{src: "/images/#{estacion.imagen}"}
         =estacion.nombre
-

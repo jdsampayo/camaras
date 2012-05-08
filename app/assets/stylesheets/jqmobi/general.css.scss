@@ -1,7 +1,8 @@
+$color-de-listas: #f1f1f1;
+
 body{
   background:#e5e3e3;
   color:#817c7c;
-  font-family: MetroDF;
 }
 
 p {
@@ -9,11 +10,18 @@ p {
   background:#e5e3e3;
 }
 
+h2 {
+  font-family: MetroDF;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+}
 
 #jQUi{
 	> #header {
 		background:#e9e9e9;
 		border-bottom:solid 1px #817c7c;
+		
 		> h1 {
 			z-index:1;
 			display:none;
@@ -67,10 +75,14 @@ p {
 }
 
 ul > li{
-	background:#e5e3e3;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(white),to($color-de-listas));
+  background-image: -webkit-linear-gradient(white,$color-de-listas);
+  background-image: linear-gradient(white,$color-de-listas);
+
 	a{
-		color:black;
-		font-family: MetroDF;
+		border-bottom: 1px solid lightgray;
+		color: black;
+	
 	}
 	
 	img{
@@ -113,47 +125,47 @@ a:active.linea-activa-1{
     background: #b9bab5;
   }
 
-a:active.linea-1{
+div.linea-1, h2.linea-1{
   background: #e76495;
   border: #e76495;
 }
-a:active.linea-2{
+div.linea-2, h2.linea-2{
   background: #1267aa;
   border: #0084ff;
 }
-a:active.linea-3{
+div.linea-3, h2.linea-3{
   background: #ae9e25;
   border: #ae9e25;
 }
-a:active.linea-4{
+div.linea-4, h2.linea-4{
   background: #6fb6ae;
   border: #6fb6ae;
 }
-a:active.linea-5{
+div.linea-5, h2.linea-5{
   background: #fdc100;
   border: #fdc100;
 }
-a:active.linea-6{
+div.linea-6, h2.linea-6{
   background: #cc0033;
   border: #cc0033;
 }
-a:active.linea-7{
+div.linea-7, h2.linea-7{
   background: #e56524;
   border: #e56524;
 }
-a:active.linea-8{
+div.linea-8, h2.linea-8{
   background: #009c6d;
   border: #009c6d;
 }
-a:active.linea-9{
+div.linea-9, h2.linea-9{
   background: #5a2d2a;
   border: #5a2d2a;
 }
-a:active.linea-A{
+div.linea-A, h2.linea-A{
   background: #a3277d;
   border: #a3277d;
 }
-a:active.linea-B{
+div.linea-B, h2.linea-B{
   background-image: -webkit-gradient(linear, left top, left bottom, from(#108c65), to(#b9bab5)); /* Saf4+, Chrome */
   background-image: -webkit-linear-gradient(#108c65, #b9bab5); /* Chrome 10+, Saf5.1+ */
   background-image:    -moz-linear-gradient(#108c65, #b9bab5); /* FF3.6 */
