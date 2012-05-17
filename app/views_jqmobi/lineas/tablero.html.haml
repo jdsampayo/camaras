@@ -4,17 +4,14 @@
 -content_for :jquery do
   :plain
     function load_header(){
-      $.ui.toggleHeaderMenu();
+      /*$.ui.toggleHeaderMenu();*/
     }
     
     function unload_header(){
-      $.ui.toggleHeaderMenu();
+      /*$.ui.toggleHeaderMenu();*/
     }
 
 #main.panel{title: 'STC', selected: "true"}
-  .logo
-    =image_tag "logo-metro.png"
-
   %table.home_buttons
     %tr
       %td
@@ -32,7 +29,7 @@
           =image_tag "favoritos.png"
       
 
-#lineas.panel{title: 'Lineas', "data-defer" => lineas_path, "data-load" => "load_header", "data-unload" => "unload_header"}
+#lineas.panel{title: 'Lineas', "data-defer" => lineas_path, "data-load" => "load_header"}
 #estaciones.panel{title: 'Estaciones', "data-defer" => estaciones_path, "data-load" => "load_header", "data-unload" => "unload_header"}
 
 #linea1.panel{title: 'Linea 1', "data-defer" => linea_path(1)}

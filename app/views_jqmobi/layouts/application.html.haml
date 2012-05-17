@@ -5,13 +5,12 @@
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
     %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
 
-    = stylesheet_link_tag    "jqmobi/styles/icons.css", :media => "all"
-    = stylesheet_link_tag    "jqmobi/themes/jq.ui.slate.css", :media => "all"
+    <link rel="stylesheet" type="text/css" href="//cdn.jqmobi.com/themes/icons.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jqmobi.com/themes/jq.ui.slate.css" title="slate" />
 
     = stylesheet_link_tag    "jqmobi/application.css", :media => "all"
 
-    = javascript_include_tag "jqmobi/jq.ui.min.js", charset: "utf-8"
-    = javascript_include_tag "jqmobi/touch.js", charset: "utf-8"
+    <script type="text/javascript" charset="utf-8" src="//cdn.jqmobi.com/jq.ui.min.js"></script>
 
     = javascript_include_tag "jqmobi/application.js", charset: "utf-8"
 

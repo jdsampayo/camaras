@@ -1,3 +1,10 @@
+unless (window.DocumentTouch and document instanceof DocumentTouch) or "ontouchstart" of window
+  script = document.createElement("script")
+  script.src = "//cdn.jqmobi.com/touch.js"
+  tag = $("head").append(script)
+  $.os.android = true
+  $.os.desktop = true
+
 showHide = (obj, objToHide) ->
   el = $("#" + objToHide)[0]
   if obj.className is "expanded"
@@ -21,6 +28,7 @@ init = ->
 document.addEventListener "DOMContentLoaded", init, false
 
 $.ui.ready ->
+  $.ui.toggleHeaderMenu();
 
 preventDefaultScroll = (event) ->
   event.preventDefault()
