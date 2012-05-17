@@ -1,5 +1,3 @@
-$color-de-listas: #f1f1f1;
-
 body{
   background:#e5e3e3;
   color:#817c7c;
@@ -15,6 +13,12 @@ h2 {
   color: #ffffff;
   font-size: 14px;
   text-align: center;
+}
+
+@mixin gradiente($color-inicial, $color-final) {
+  background-image: -webkit-gradient(linear,left top,left bottom,from($color-inicial),to($color-final));
+  background-image: -webkit-linear-gradient($color-inicial,$color-final);
+  background-image: linear-gradient($color-inicial,$color-final);
 }
 
 #jQUi{
@@ -48,7 +52,7 @@ h2 {
 	}
 	
 	.home_buttons{
-		margin:60px auto;
+		margin:40px auto;
 		width:100%;
 
 		td{
@@ -57,6 +61,7 @@ h2 {
 		
 		img{
 			width:80%;
+			margin-bottom:30px;
 		}
 	}
 	
@@ -74,15 +79,29 @@ h2 {
 	
 }
 
+/* listas */
 ul > li{
-  background-image: -webkit-gradient(linear,left top,left bottom,from(white),to($color-de-listas));
-  background-image: -webkit-linear-gradient(white,$color-de-listas);
-  background-image: linear-gradient(white,$color-de-listas);
+	@include gradiente(white, #f1f1f1);
 
 	> a{
 		border-bottom: 1px solid lightgray;
-		color: black;
+		color: #2F3E46;
 		position: relative;
+		font-weight: bold;
+		text-shadow: 0 1px 0 white;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+
+		> img{
+			height: 80%;
+			margin-top:5px;
+		}
+		
+		> span{
+			position: relative;
+			top: -11px;
+		}
 	}
 	
 	> a::after{
@@ -95,143 +114,55 @@ ul > li{
 		top: 15px;
 		border-radius: 9px;
 	}
-	
-	img{
-		height: 80%;
-		margin-top:5px;
-	}
 }
 
-a:active.linea-activa-1{
-    background: #e76495;
-  }
- a:active.linea-activa-2{
-    background: #1267aa;
-  }
- a:active.linea-activa-3{
-    background: #ae9e25;
-  }
- a:active.linea-activa-4{
-    background: #6fb6ae;
-  }
- a:active.linea-activa-5{
-    background: #fdc100;
-  }
- a:active.linea-activa-6{
-    background: #cc0033;
-  }
- a:active.linea-activa-7{
-    background: #e56524;
-  }
- a:active.linea-activa-8{
-    background: #009c6d;
-  }
- a:active.linea-activa-9{
-    background: #5a2d2a;
-  }
- a:active.linea-activa-A{
-    background: #a3277d;
-  }
- a:active.linea-activa-B{
-    background: #b9bab5;
-  }
+/* colores de las lineas */
+$linea-1: #e76495;
+$linea-2: #1267aa;
+$linea-3: #ae9e25;
+$linea-4: #6fb6ae;
+$linea-5: #fdc100;
+$linea-6: #cc0033;
+$linea-7: #e56524;
+$linea-8: #009c6d;
+$linea-9: #5a2d2a;
+$linea-A: #a3277d;
+$linea-B: #b9bab5;
+$linea-B2: #108c65;
 
-div.linea-1, h2.linea-1{
-  background: #e76495;
-  border: #e76495;
+a:active.linea-activa-1, h2.linea-1{
+	background: $linea-1;
 }
-div.linea-2, h2.linea-2{
-  background: #1267aa;
-  border: #0084ff;
+a:active.linea-activa-2, h2.linea-2{
+	background: $linea-2;
 }
-div.linea-3, h2.linea-3{
-  background: #ae9e25;
-  border: #ae9e25;
+a:active.linea-activa-3, h2.linea-3{
+	background: $linea-3;
 }
-div.linea-4, h2.linea-4{
-  background: #6fb6ae;
-  border: #6fb6ae;
+a:active.linea-activa-4, h2.linea-4{
+	background: $linea-4;
 }
-div.linea-5, h2.linea-5{
-  background: #fdc100;
-  border: #fdc100;
+a:active.linea-activa-5, h2.linea-5{
+	background: $linea-5;
 }
-div.linea-6, h2.linea-6{
-  background: #cc0033;
-  border: #cc0033;
+a:active.linea-activa-6, h2.linea-6{
+	background: $linea-6;
 }
-div.linea-7, h2.linea-7{
-  background: #e56524;
-  border: #e56524;
+a:active.linea-activa-7, h2.linea-7{
+	background: $linea-7;
 }
-div.linea-8, h2.linea-8{
-  background: #009c6d;
-  border: #009c6d;
+a:active.linea-activa-8, h2.linea-8{
+	background: $linea-8;
 }
-div.linea-9, h2.linea-9{
-  background: #5a2d2a;
-  border: #5a2d2a;
+a:active.linea-activa-9, h2.linea-9{
+	background: $linea-9;
 }
-div.linea-A, h2.linea-A{
-  background: #a3277d;
-  border: #a3277d;
+a:active.linea-activa-A, h2.linea-A{
+	background: $linea-A;
 }
-div.linea-B, h2.linea-B{
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#108c65), to(#b9bab5)); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(#108c65, #b9bab5); /* Chrome 10+, Saf5.1+ */
-  background-image:    -moz-linear-gradient(#108c65, #b9bab5); /* FF3.6 */
-  background-image:     -ms-linear-gradient(#108c65, #b9bab5); /* IE10 */
-  background-image:      -o-linear-gradient(#108c65, #b9bab5); /* Opera 11.10+ */
-  background-image:         linear-gradient(#108c65, #b9bab5);
-
-  background-image: linear-gradient(top,#108c65 50%,#b9bab5 50%);
-  background-image: -moz-linear-gradient(top,#108c65 50%,#b9bab5 50%);
-  background-image: -webkit-linear-gradient(top,#108c65 50%,#b9bab5 50%);
-  border: #b9bab5;
-}
-
-.division-1{
-  background: #f38cb2 ;
-  border: #e76495;
-}
-.division-2{
-  background: #4697d4 ;
-  border: #0084ff;
-}
-.division-3{
-  background: #d7c858;
-  border: #ae9e25;
-}
-.division-4{
-  background: #9bdbd4;
-  border: #6fb6ae;
-}
-.division-5{
-  background: #fed140;
-  border: #fdc100;
-}
-.division-6{
-  background: #e63965;
-  border: #cc0033;
-}
-.division-7{
-  background: #f28d59;
-  border: #e56524;
-}
-.division-8{
-  background: #33ce9f;
-  border: #009c6d;
-}
-.division-9{
-  background: #5a2d2a;
-  border: #5a2d2a;
-}
-.division-A{
-  background: #d15aad;
-  border: #a3277d;
-}
-.division-B{
-  background: #dcddd8;
-  border: #002a1d;
+a:active.linea-activa-B, h2.linea-B{
+	background: $linea-B;
+	background-image: linear-gradient(top,$linea-B2 50%, $linea-B 50%);
+	background-image: -webkit-linear-gradient(top,$linea-B2 50%, $linea-B 50%);
 }
 
