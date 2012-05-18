@@ -1,8 +1,13 @@
 %header{class: "linea-#{@estacion.linea.nombre}"}
   %h2{class: "linea-#{@estacion.linea.nombre}"}=@estacion.nombre
 
-%ul
+%ul.list-camaras
   - @camaras.each do |camara|
     %li
       %a{href: camara_path(camara), class: "linea-activa-#{@estacion.linea.nombre}"}=camara.nombre
-      
+
+<script>
+$(document).ready(function(){
+$(".list-camaras").filterList({revealElements:false,perPage:1000,caseInsensitive:true});
+});
+</script>

@@ -10,6 +10,10 @@
     function unload_header(){
       /*$.ui.toggleHeaderMenu();*/
     }
+    
+    function create_searchbar(){
+      $(".list-estaciones").filterList({revealElements:false,perPage:1000,caseInsensitive:true});
+    }
 
 #main.panel{title: 'STC', selected: "true"}
   %table.home_buttons
@@ -30,7 +34,7 @@
       
 
 #lineas.panel{title: 'Lineas', "data-defer" => lineas_path, "data-load" => "load_header"}
-#estaciones.panel{title: 'Estaciones', "data-defer" => estaciones_path, "data-load" => "load_header", "data-unload" => "unload_header"}
+#estaciones.panel{title: 'Estaciones', "data-defer" => estaciones_path, "data-load" => "create_searchbar", "data-unload" => "unload_header"}
 
 #linea1.panel{title: 'Linea 1', "data-defer" => linea_path(1)}
 #linea2.panel{title: 'Linea 1', "data-defer" => linea_path(2)}

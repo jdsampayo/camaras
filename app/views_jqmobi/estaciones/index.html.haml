@@ -1,7 +1,7 @@
 %header{class: "linea-7"}
   %h2{class: "linea-7"} ESTACIONES
 
-%ul
+%ul.list-estaciones
   - @estaciones.each do |estacion|
     %li
       %a{href: estacion_path(estacion) , class: "linea-activa-#{estacion.linea.nombre}" }

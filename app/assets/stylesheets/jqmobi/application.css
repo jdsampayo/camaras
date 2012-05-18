@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require jqmobi/styles/jq.filterlist.css
  *= require shared/fuente.css.erb
  *= require jqmobi/general.css.scss
 */
